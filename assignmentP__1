@@ -1,0 +1,58 @@
+// Very Easy 1
+		const convert=minutes=>minutes*60;
+		console.log(convert(5));
+		console.log(convert(3));
+		console.log(convert(2));
+
+
+		// Very Easy 2
+		let result=true;
+		const dividesEvenly=(a,b)=>{
+			if(a>=b){
+			result=(a%b==0)?result:!result;
+			return result;}
+			else{
+				return "Wrong Inputs!!"
+			}
+		}
+		console.log(dividesEvenly(98,7));
+		console.log(dividesEvenly(85,4));
+
+
+		// Easy 1
+		const charCount=(letter,str)=>{
+			let count=0;
+			for(let i=0;i<str.length;i++){
+				if(str[i]===letter){
+					count++;
+				}
+			}
+			return count;
+		}
+		console.log(charCount("a","edabit"));
+		console.log(charCount("c","Chamber of secrets"));
+		console.log(charCount("b","big fat bubble"));
+
+
+		// Easy 2
+		const addUp=num=>{
+			let sum=0;
+			if(num>=1 && num<=1000)
+			for(let i=1;i<=num;i++){
+				sum=sum+i;
+			}
+			return sum;
+		}
+		console.log(addUp(4));
+		console.log(addUp(13));
+		console.log(addUp(600));
+
+
+		// Easy 3
+		const replaceVowel=(string)=>{
+		var res=string.split("a").join("1").split("e").join("2").split("i").join("3").split("o").join("4").split("u").join("5");
+		console.log(res)
+	}
+	replaceVowel("karachi");
+	replaceVowel("chembur");
+	replaceVowel("khandbari");
